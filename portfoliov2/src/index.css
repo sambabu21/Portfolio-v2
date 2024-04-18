@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: Mango Grotesque;
+  src: url("./Fonts/MangoGrotesque-Black.otf"),
+        url("./Fonts/MangoGrotesque-Bold.otf"),
+        url("./Fonts/MangoGrotesque-ExtraBold.otf"),
+        url("./Fonts/MangoGrotesque-Light.otf"),
+        url("./Fonts/MangoGrotesque-Medium.otf"),
+        url("./Fonts/MangoGrotesque-Regular.otf"),
+        url("./Fonts/MangoGrotesque-SemiBold.otf"),
+        url("./Fonts/MangoGrotesque-Thin.otf");
+}
+
+:root {
+  font-family: "DM Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #292727;
+  background-color: #f5f5fa;
+  ;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  scroll-behavior: smooth;
+}
+
+.inter{
+  font-family: "Inter" ,sans-serif;
+}
+
+.slide{
+  transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.text-mask{
+  -webkit-text-fill-color:#f2f2f8;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #242424;
+}
+.text-header{
+  -webkit-text-fill-color:#242424;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #F15a24;
+}
+
+.text-header:hover{
+  -webkit-text-fill-color:#F15a24;
+
+}
+
+#logo{
+  animation: fill-in 0.5s ease forwards 4s;
+}
+
+#logo path:nth-child(1){
+  stroke-dasharray: 696;
+  stroke-dashoffset: 696;
+  animation: line-anim 2s ease forwards 1.8s;
+}
+#logo path:nth-child(2){
+  stroke-dasharray: 779;
+  stroke-dashoffset: 779;
+  animation: line-anim 2s ease forwards 1.5s;
+}
+#logo path:nth-child(3){
+  stroke-dasharray: 660;
+  stroke-dashoffset: 660;
+  animation: line-anim 2s ease forwards 1.2s;
+}
+#logo path:nth-child(4){
+  stroke-dasharray: 779;
+  stroke-dashoffset: 779;
+  animation: line-anim 2s ease forwards 0.9s;
+}
+#logo path:nth-child(5){
+  stroke-dasharray: 966;
+  stroke-dashoffset: 966;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+#logo path:nth-child(6){
+  stroke-dasharray: 660;
+  stroke-dashoffset: 660;
+  animation: line-anim 2s ease forwards 0.3s;
+}
+#logo path:nth-child(7){
+  stroke-dasharray: 706;
+  stroke-dashoffset: 706;
+  animation: line-anim 2s ease forwards;
+}
+
+@keyframes line-anim {
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-in {
+  from{
+    fill: transparent;
+  }
+  to{
+    fill: #F15a24;
+  }
+}
+
+#typewriter{
+  color: #F15a24;
+
+}
+
+#cursor{
+  color: #F15a24;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+0%{
+  opacity: 1;
+}
+50%{
+  opacity: 0;
+}
+}
+
+.project{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 15px;
+  border-top: 1px solid #c9c9c9;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+@media (min-width:640px){
+  .project{
+    padding: 50px 50px 50px 50px;
+  }
+}
