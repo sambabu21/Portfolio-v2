@@ -45,7 +45,7 @@ export default function About(){
                             whileInView={{opacity:1,transition:{duration:1} }}
                             src={musicImg} className="w-[50vw] sm:w-[20vw] h-[90%] rotate-6 sm:ml-10 rounded-md mb-20"></motion.img>
                         <h2 className="font-medium text-2xl sm:text-4xl w-[90%] sm:w-1/2">What is life without music?
-                        Check out my instagram :  <FontAwesomeIcon icon={faInstagram} className="text-[#F15a24]"/>
+                        Check out my instagram :  <a href="https://www.instagram.com/sam_babu_/" target="blank"><FontAwesomeIcon icon={faInstagram} className="text-[#F15a24]"/></a>
                         </h2>
                     </div>
                   </div>
