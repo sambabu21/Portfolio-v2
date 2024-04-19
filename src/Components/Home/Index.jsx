@@ -29,9 +29,9 @@ export default function Home(){
             <div className="absolute inset-0 -z-10 w-full h-full">
                 <h1 className="text-[#383838a8] text-[40vw] font-extrabold tracking-tighter -mt-16 sm:-mt-28 ">SAMBABU</h1>
             </div>
-             <div className="absolute top-1/3 sm:top-1/2 -translate-y-1/2 ml-20">
-                <h1 className="sm:text-[3rem] font-medium mb-10 text-[#f2f2f8]">Welcome to my portfolio👋</h1>
-                <h1 className="sm:text-[3rem] font-medium text-[#f2f2f8]">My name is Sam,<br></br>
+             <div className="absolute top-1/3 sm:top-1/2 -translate-y-1/2 -mt-2 mx-10 sm:ml-20">
+                <h1 className="text-[1.7rem] sm:text-[3rem] font-medium mb-10 text-[#f2f2f8]">Welcome to my portfolio👋</h1>
+                <h1 className="text-[1.7rem] sm:text-[3rem] font-medium text-[#f2f2f8]">My name is Sam,<br></br>
                     I am a  <span className="text-[#F15a24]">
                     <Typewriter
                         words={['Web Developer','UI Developer','Creative Designer']}

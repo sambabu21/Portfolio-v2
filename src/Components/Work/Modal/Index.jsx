@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion,AnimatePresence } from 'framer-motion';
 // import Image from 'next/image';
 // import styles from './style.module.css';
 // import gsap from 'gsap';
@@ -68,9 +68,15 @@ export default function Modal({modal,detail, projects,setModal}) {
     
     {
       
-      modal?<div className='h-screen w-screen bg-[#292727] bg-opacity-10 flex justify-center items-center fixed inset-0 z-20'>
+      modal?
+      <AnimatePresence>
+      <div className='h-screen w-screen bg-[#292727] bg-opacity-20 flex justify-center items-center fixed inset-0 z-20'>
       
-        <div className='sm:w-1/2 sm:h-2/3 bg-[#292727] flex flex-col justify-star items-center gap-10 p-5 sm:pt-5 rounded-md'>
+        <motion.div 
+          initial={{opacity:0,scale:0}}
+          animate={{opacity:1,scale:1}}
+          exit={{opacity:0,scale:0}}
+          className='sm:w-1/2 sm:h-2/3 bg-[#292727] flex flex-col justify-star items-center gap-10 p-5 sm:pt-5 rounded-md'>
             <div className='flex justify-end items-end  w-[90%] '>
               <p onClick={()=>setModal(false)} className='hover:cursor-pointer text-[#F15a24] font-medium'>Close</p>
             </div>
@@ -81,8 +87,9 @@ export default function Modal({modal,detail, projects,setModal}) {
                 <path d="M14.9912 0.867836C14.9182 0.320396 14.4153 -0.0642197 13.8678 0.00877228L4.94679 1.19825C4.39935 1.27124 4.01473 1.7742 4.08772 2.32164C4.16071 2.86908 4.66367 3.25369 5.21111 3.1807L13.1409 2.12339L14.1982 10.0532C14.2712 10.6007 14.7742 10.9853 15.3216 10.9123C15.8691 10.8393 16.2537 10.3363 16.1807 9.78889L14.9912 0.867836ZM1.79436 18.6075L14.7944 1.60745L13.2056 0.39255L0.205642 17.3925L1.79436 18.6075Z" fill="#F15A24"/>
               </svg>
             </a>
-        </div>
-    </div> : null
+        </motion.div>
+    </div>
+    </AnimatePresence> : null
   
   }
   </>

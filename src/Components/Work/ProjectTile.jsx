@@ -25,12 +25,12 @@ export default function ProjectTile({index, title, setModal, project,setDetail }
     }
 
     return (
-        <div className="project group" onClick={()=>{handleclick(project)}}>
-            <div >
-                <h2 className="font-medium text-2xl sm:text-4xl transition group-hover:-translate-x-2 ease-in duration-100">{title}</h2>
+        <div className="project gap-5 group" onClick={()=>{handleclick(project)}}>
+            <div className='w-2/3 sm:w-3/4'>
+                <h2 className="font-medium text-xl sm:text-4xl transition group-hover:-translate-x-2 ease-in duration-100">{title}</h2>
                 <p className='hidden group-hover:block'>click for preview</p>
             </div>
-            <p className="transition group-hover:translate-x-2 ease-in duration-100 text-sm sm:text-md">Design & Development</p>
+            <p className="transition group-hover:translate-x-2 ease-in duration-100 text-xs sm:text-md">Design & Development</p>
         </div>
     )
 }
