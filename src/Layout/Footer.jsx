@@ -13,7 +13,7 @@ export default function Footer(){
                 <a href="https://github.com/sambabu21" target=" " className="text-2xl">
                 <FontAwesomeIcon icon={faGithub} className="text-[#292727] sm:w-10 sm:h-10 hover:text-gray-500" />
             </a>
-                <a href="mailto:samjovebabu10@gmail.com" className="text-2xl">
+                <a href="https://www.instagram.com/sam_babu_/" target=" " className="text-2xl">
                 <FontAwesomeIcon icon={faInstagram} className="text-[#292727] sm:w-10 sm:h-10  hover:text-gray-500" />
                 </a>
             </div>
