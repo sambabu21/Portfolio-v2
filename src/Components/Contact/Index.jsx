@@ -32,7 +32,7 @@ export default function Contact(){
                         </Reveal>
                         </div>
                         <div className="mt-10">
-                            <a href="mailto:samjovebabu10@gmail.com" className="text-[#f2f2f8] inter font-bold text-[20px] sm:text-[50px] underline ml-10 hover:cursor-pointer hover:">
+                            <a href="mailto:samjovebabu10@gmail.com" className="text-[#f2f2f8] hover:text-[#C8C8C8] inter font-bold text-[20px] sm:text-[50px] underline ml-10 hover:cursor-pointer hover:">
                             samjovebabu10@gmail.com
                             </a>
                         </div>
