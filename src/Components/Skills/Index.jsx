@@ -21,7 +21,7 @@ export default function Skills(){
                     {/* <FontAwesomeIcon icon={faArrowTurnDown} className="w-16 h-16 absolute -right-20 top-1/2"/> */}
                 </h1>
             </div>
-            <div className="w-[90vw] sm:w-[80vw] mx-auto flex flex-wrap mt-10 gap-2">
+            <div className="w-[90vw] sm:w-[80vw] mx-auto flex flex-wrap mt-10 gap-2 sm:gap-0">
                 <div className="w-[20vw]  flex justify-center items-center">
                     <img src={reactLogo} className=" sm:w-2/3"/>
                 </div>
