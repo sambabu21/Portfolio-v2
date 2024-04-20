@@ -76,8 +76,7 @@ export default function Modal({modal,detail, projects,setModal}) {
           initial={{opacity:0,scale:0}}
           animate={{opacity:1,scale:1}}
           exit={{opacity:0,scale:0}}
-          style={{backgroundColor:detail.color}}
-          className='sm:w-1/2 sm:h-2/3 flex flex-col justify-star items-center gap-10 p-5 sm:pt-5 rounded-md'>
+          className='sm:w-1/2 bg-[#292727] sm:h-2/3 flex flex-col justify-star items-center gap-10 p-5 sm:pt-5 rounded-md'>
             <div className='flex justify-end items-end  w-[90%] '>
               <p onClick={()=>setModal(false)} className='hover:cursor-pointer text-[#F15a24] font-medium'>Close</p>
             </div>
